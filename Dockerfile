@@ -5,4 +5,4 @@ FROM httpd:latest
 MAINTAINER "manju@gmail.com"
 
 # copying the the cakeshop application files from the source directory to destincation HTTPD Container directory
-COPY ./petshop/ /usr/local/apache2/htdocs/
+COPY ./dog_shop/ /usr/local/apache2/htdocs/
