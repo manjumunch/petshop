@@ -9,7 +9,7 @@ pipeline {
         stage('Clone the project ') {
             steps {
                 echo 'clone the project'
-                git branch: 'main', url: 'https://github.com/manjumunch/jewelshop.git'
+                git branch: 'main', url: 'https://github.com/manjumunch/petshop.git'
                 
             }
         }
@@ -23,7 +23,7 @@ pipeline {
         stage('Deploy to httpd server') {
             steps {
                 echo 'coping the file '
-                 sh 'scp -i /home/ec2-user/key.pem -r /var/jenkins/workspace/goldshop/* ec2-user@13.233.113.143:/var/www/html'
+                 sh 'scp -i /home/ec2-user/key.pem -r /var/jenkins/workspace/petshop/* ec2-user@43.205.233.196:/var/www/html'
                 
             }
         }
