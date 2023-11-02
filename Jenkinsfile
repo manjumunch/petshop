@@ -27,7 +27,7 @@ pipeline {
                 
             }
         }
-        stage('Stage4_dummy') {
+        stage('Done and Dusted ') {
             steps {
                 echo 'check the deploy'
             }
